@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>CRUD</title>
+    </head>
+    <body class="bg-dark">
+        <div class="text-center my-4 title">
+            <h2 class="text-light">CRUD Operations System</h2>
+        </div>
+        <div class="crud m-auto p-5">
+            <label class="text-bg-dark" for="">Product Name</label>
+            <input type="text" class="mb-2 form-control input" id="nameInput" />
+            <div id="alertName" class="alert alert-danger d-none py-2">
+                Product Name Should Starts with Capital Character
+            </div>
+            <label class="text-bg-dark" for="">Product Price</label>
+            <input
+                type="number"
+                class="mb-2 form-control input"
+                id="priceInput"
+            />
+            <div id="alertPrice" class="alert alert-danger d-none py-2">
+                Product price Should be ...
+            </div>
+            <label class="text-bg-dark" for="">Product Category</label>
+            <input
+                type="text"
+                class="mb-2 form-control input"
+                id="categoryInput"
+            />
+            <div id="alertCategory" class="alert alert-danger d-none py-2">
+                Product Category Should be ...
+            </div>
+            <label class="text-bg-dark" for="">Product Description</label>
+            <textarea
+                type="text"
+                class="mb-2 form-control input"
+                id="descriptionInput"
+            ></textarea>
+            <div id="alertDisc" class="alert alert-danger d-none py-2">
+                Product Discription Should be ...
+            </div>
+            <button
+                id="addBtn"
+                disabled
+                class="btn btn-light text-bg-dark float-end mt-2 mb-1"
+            >
+                Add Product
+            </button>
+            <div class="clearfix"></div>
+
+            <input
+                type="text"
+                class="my-3 form-control input"
+                placeholder="Search By Name..."
+                id="searchInput"
+            />
+            <table
+                class="table justify-content-center align-items-center text-bg-dark"
+            >
+                <thead>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.crud {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title h2 {
+    text-shadow: #c0c0c0 0px 0px 20px;
+}
+
+.input {
+    border: 1px solid #495057;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input::placeholder {
+    color: #6c757d;
+}
+
+.btn {
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.table {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th,
+.table tbody td {
+    font-size: 1rem;
+    padding: 10px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.alert {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .crud {
+        max-width: 85%;
+    }
+
+    .title h2 {
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .crud {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .input {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .crud {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .title h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .input {
+        font-size: 0.85rem;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 6px;
+    }
+
+    .table tbody td {
+        word-wrap: break-word;
+    }
+}
