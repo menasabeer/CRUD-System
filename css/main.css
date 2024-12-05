@@ -106,7 +106,7 @@ body {
 
 @media (max-width: 576px) {
     .crud {
-        max-width: 95%;
+        width: 100%;
         padding: 10px;
     }
 
