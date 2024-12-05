@@ -110,7 +110,7 @@ function elseLogic(alert,input){
     alert.classList.remove('d-none')
 }    
 productNameInput.onkeyup = function (){
-    let nameRejex = /^[A-Z][a-z]{2,9}$/
+    let nameRejex = /^[A-Z][a-z]{2,20}( [A-Z][a-z]{2,20})*$/;
     if(nameRejex.test(productNameInput.value)){
         ifLogic (alertName,productNameInput);
     }else{
